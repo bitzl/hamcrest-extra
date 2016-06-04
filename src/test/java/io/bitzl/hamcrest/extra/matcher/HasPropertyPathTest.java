@@ -1,5 +1,7 @@
 package io.bitzl.hamcrest.extra.matcher;
 
+import org.hamcrest.Description;
+import org.hamcrest.StringDescription;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -55,4 +57,17 @@ public class HasPropertyPathTest {
         assertThat(first, not(hasPropertyPath("next.next.fail")));
     }
 
+    @Test
+    public void shouldDescribeAsExpectedWithoutValueMatcher() {
+        Description description = new StringDescription();
+        hasPropertyPath("test").describeTo(description);
+        assertThat(description.toString(), is("hasPropertyPath(\"test\", ANYTHING)"));
+    }
+
+    @Test
+    public void shouldDescribeAsExpectedWithValueMatcher() {
+        Description description = new StringDescription();
+        hasPropertyPath("test", is("other")).describeTo(description);
+        assertThat(description.toString(), is("hasPropertyPath(\"test\", is \"other\")"));
+    }
 }
