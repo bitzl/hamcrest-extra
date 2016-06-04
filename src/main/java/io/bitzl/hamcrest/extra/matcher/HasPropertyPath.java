@@ -33,10 +33,8 @@ public class HasPropertyPath<T> extends TypeSafeDiagnosingMatcher<T> {
         Matcher<?> matcher = valueMatcher;
         for (int i = path.length - 1; i >=0; i--) {
             String property = path[i];
-            System.out.println("Add property " + property + ": " + matcher);
             matcher = hasProperty(property, matcher);
         }
-        System.out.println("Matcher now is " + matcher);
         return ((HasPropertyWithValue<T>) matcher).matchesSafely(t, description);
     }
 
