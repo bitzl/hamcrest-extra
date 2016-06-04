@@ -9,6 +9,20 @@
     <version>1.0-SNAPSHOT</version>
 
     <name>Hamcrest Extras</name>
+    <description>Useful extra matchers for Hamcrest.</description>
+    <url>https://github.com/bitzl/hamcrest-extra</url>
+
+    <scm>
+        <url>https://github.com/bitzl/hamcrest-extra</url>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://github.com/bitzl/hamcrest-extra/blob/master/LICENSE</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
     <properties>
         <version.jacoco>0.7.5.201505241946</version.jacoco>
