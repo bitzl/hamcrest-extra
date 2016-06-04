@@ -1,9 +1,6 @@
 package io.bitzl.hamcrest.extra.matcher;
 
-import org.hamcrest.Description;
-import org.hamcrest.Factory;
-import org.hamcrest.Matcher;
-import org.hamcrest.TypeSafeDiagnosingMatcher;
+import org.hamcrest.*;
 import org.hamcrest.beans.HasPropertyWithValue;
 
 import static org.hamcrest.Matchers.anything;

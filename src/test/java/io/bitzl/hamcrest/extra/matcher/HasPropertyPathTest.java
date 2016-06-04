@@ -1,6 +1,5 @@
 package io.bitzl.hamcrest.extra.matcher;
 
-import com.bitzl.various.tests.GraphObject;
 import org.junit.Before;
 import org.junit.Test;
 
