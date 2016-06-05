@@ -7,13 +7,15 @@
 
 Useful matchers which are not part of the official Hamcrest.
 
+## Usage
+
 The `HasPropertyPath` matcher is an extension on the regular `HasProperty` matcher to test deeper nesting. This is for example useful to test Neo4j deserialization:
 
 ```java
 @Test
-public void shouldLoadItemClientAndPetForPetNamedPeter() {
+public void shouldLoadItemClientAndPetForPetNamedPete() {
     Item item = repository.loadItemClientAndPet(...);
-    assertThat(item, hasPropertyPath("client.pet.name", is("Peter"));
+    assertThat(item, hasPropertyPath("client.pet.name", is("Pete"));
 }
 ```
 
