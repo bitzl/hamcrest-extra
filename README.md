@@ -28,3 +28,11 @@ public void shouldHavePathToPetName() {
     assertThat(item, hasPropertyPath("client.pet.name", is(anything()));
 }
 ```
+
+# Setup
+
+```Maven POM
+<groupId>io.bitzl</groupId>
+<artifactId>hamcrest-extras</artifactId>
+<version>1.0.0-RELEASE</version>
+```
