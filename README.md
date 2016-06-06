@@ -31,8 +31,11 @@ public void shouldHavePathToPetName() {
 
 # Setup
 
-```Maven POM
+Add to your project using Maven dependency:
+
+```xml
 <groupId>io.bitzl</groupId>
 <artifactId>hamcrest-extras</artifactId>
 <version>1.0.0-RELEASE</version>
+<scope>test</scope>
 ```
